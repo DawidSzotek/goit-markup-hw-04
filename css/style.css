@@ -87,11 +87,10 @@ body {
     display: block;
     margin: auto;
     background-color: #2f303a;
-    background-image:url(/image/p10.jpg);
-    background-image: linear-gradient(to right, 
-    #2F303A66 40%,
-    #2F303A66 40% );
+    background-image:url("../image/p10.jpg");
+    max-width:1600px;
 }
+   
 .main-text-content {
     display: block;
     text-align: center;
