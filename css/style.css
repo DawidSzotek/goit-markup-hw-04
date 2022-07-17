@@ -11,8 +11,8 @@
     --body-background-color: #ffffff;
     --main-text-color: #212121;
     --color-icon:#AFB1B8;
-
 }
+
 .container {
     width: 1200px;
     padding: 0 15px;
@@ -49,26 +49,29 @@ body {
     font-size: 26px;
     padding-right: 90px;
 }
-.navigation a {
+.navigation a  {
     text-decoration: none;
     color: #000000;
     font-size: 16px;
     font-weight: 500;
 }
 .contact-links-header a {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 24px;
     color: var(--contacts-header-color);
+
 }
 .contact-links-header {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     list-style: none;
     font-size: 14px;
     line-height: 24px;
     color: var(--contacts-header-color);
     padding-left: 345px;
-    gap: 30px;
+    gap:30px
 }
 .footer-navigation a {
     text-decoration: none;
@@ -83,14 +86,13 @@ body {
 .main-header {
     display: block;
     margin: auto;
-    background-color: var(--background-color);
-    background-image:url(/image/p10.jpg);
-     background-image:linear-gradient(
-        to right,
-         #2F303A66 40%
-         #2F303A66 40%
-     );
+    background-color: #2f303a;
+    background: linear-gradient(to right,
+        #2F303A66 40%,
+        #2F303A66 40%
+    ),url(/image/p10.jpg);
 }
+
 .main-text-content {
     display: block;
     text-align: center;
@@ -179,15 +181,17 @@ body {
 }
 .contact {
     font-size: 14px;
+    padding-left:215px;
+    list-style: none;
+    padding-bottom:60px;
 }
 .contact a {
+    display: inline-block;
     font-size: 14px;
     line-height: 24px;
     color: var(--contacts-header-color);
-    display: inline-block;
-    display: block;
-    margin-top:9px;
     width: 231px;
+    padding-bottom:9px;
 }
 .footer-navigation address {
     color: #ffffff;
@@ -198,12 +202,6 @@ body {
     color: var(--accent-color);
     font-weight: 700;
     font-size: 26px;
-}
-.navigation-color {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    color: #ffffff;
 }
 .team-name {
     display: block;
@@ -327,12 +325,21 @@ body {
 .address {
     display: inline-block;
     font-style: normal;
-    padding-bottom: 60px;
+    padding-bottom: 9px;
+    padding-left:215px;
     color:var(--contacts-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
 }
 .icon-header{
+    margin-right:10px;
     width:16px;
-    height:12px;
+    height:16px;
+}
+.icon-header:hover{
+    fill:var(--accent-color)
 }
 .icon-list{
     display: flex;
@@ -390,43 +397,66 @@ body {
 }
 .primary-client-list-svg:focus,
 .primary-client-list-svg:hover{
-     fill:var(--accent-color)
+     fill:var(--accent-color);
 cursor: pointer;
 }
-.section-socialmedia{
-    padding-left:70px;
+.footer-socialmedia {
+    padding-left: 70px;
 }
-    .section-socialmedia-footer {
-    font-weight: 700;
+.footer-socialmedia-title{
+     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--header-text-color);
+    color: var(--body-background-color);
     margin: 0;
 }
-
-.footer-socialmedia{
+.list-footer-socialmedia-menu{
     display: flex;
     padding-top: 20px;
     gap: 10px;
 }
-
-.footer-socialmedia{
-    width: 40px;
+.footer-socialmedia-svg{
+    width: 20px;
+    height: 20px;
+}
+.footer-socialmedia-item{
+     width: 40px;
     height: 40px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    fill: var(--header-text-color);
-    background: var(--svg-background);
+    background: rgba(255, 255, 255, 0.1);
+    fill:var(--body-background-color)
 }
-
-.footer-socialmedia:hover,
-.footer-socialmedia:focus {
-    background: var(--link-color);
-    cursor: pointer;
+.social-network-icon{
+    width:20px;
+    height:20px;
 }
-
-
+.social-network {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 206px;
+    padding-top: 16px;
+    list-style: none;
+}
+.social-network-button-list{
+   display: inline-flex;
+   padding:12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--color-icon)
+}
+.social-network-button-list:hover,
+.social-network-button-list:focus,
+.social-network-button-list:active{
+    background-color: var(--accent-color);
+    fill:var(--body-background-color);
+}
