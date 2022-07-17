@@ -92,8 +92,8 @@ body {
         #2F303A66 40%
     );
     background-image:url(/image/p10.jpg);
+    background-size: 100%, cover;
 }
-
 .main-text-content {
     display: block;
     text-align: center;
