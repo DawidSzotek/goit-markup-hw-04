@@ -90,7 +90,8 @@ body {
     background: linear-gradient(to right,
         #2F303A66 40%,
         #2F303A66 40%
-    ),url(./image/p10.jpg);
+    );
+    background-image:url(/image/p10.jpg);
 }
 
 .main-text-content {
