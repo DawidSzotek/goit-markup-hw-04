@@ -86,11 +86,11 @@ body {
 .main-header {
     display: block;
     margin: auto;
-    background-color: #2f303a;
-    background-image:url("../image/p10.jpg");
-    max-width:1600px;
+   background-image: linear-gradient(to right,
+    #2F303A66 40%,
+    #2F303A66 40%),url(../images/p10.jpg);
+    background-size: cover;
 }
-   
 .main-text-content {
     display: block;
     text-align: center;
@@ -179,9 +179,7 @@ body {
 }
 .contact {
     font-size: 14px;
-    padding-left:215px;
     list-style: none;
-    padding-bottom:60px;
 }
 .contact a {
     display: inline-block;
@@ -293,6 +291,7 @@ body {
    border-bottom: 1px solid #eeeeee;
 }
 .product:hover{
+    cursor: pointer;
      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product-name {
@@ -321,10 +320,8 @@ body {
     padding-bottom: 94px;
 }
 .address {
-    display: inline-block;
     font-style: normal;
     padding-bottom: 9px;
-    padding-left:215px;
     color:var(--contacts-color);
     font-weight: 400;
     font-size: 14px;
@@ -374,11 +371,6 @@ body {
     gap:30px;
     padding-bottom:94px
 }
-.primary-client-list li:focus,
-.primary-client-list li:hover{
-    cursor: pointer;
-    fill: var(--accent-color)
-}
 .primary-client-list li{
    display: inline-flex;
     justify-content: center;
@@ -388,17 +380,13 @@ body {
     border-radius: 4px;
     border: 1px solid #AFB1B8;
 }
+.primary-client-list li :focus,
+.primary-client-list li :hover{
+    cursor: pointer;
+    fill: var(--accent-color)
+}
 .primary-client-list-svg{
-    
     fill:var(--color-icon)
-}
-.primary-client-list-svg:focus,
-.primary-client-list-svg:hover{
-     fill:var(--accent-color);
-cursor: pointer;
-}
-.footer-socialmedia {
-    padding-left: 70px;
 }
 .footer-socialmedia-title{
      font-weight: 700;
@@ -410,7 +398,7 @@ cursor: pointer;
     margin: 0;
 }
 .list-footer-socialmedia-menu{
-    display: flex;
+    display: inline-flex;
     padding-top: 20px;
     gap: 10px;
 }
@@ -453,4 +441,11 @@ cursor: pointer;
 .social-network-button-list:active{
     background-color: var(--accent-color);
     fill:var(--body-background-color);
+}
+.block{
+    display: inline-block;
+    align-items: flex-start;
+}
+.socialmedia-center{
+    display: inline-flex;
 }
