@@ -55,13 +55,15 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+.contact-links-header li :hover{
+    fill:var(--accent-color);
+}
 .contact-links-header a {
     display: flex;
     align-items: center;
     font-size: 14px;
     line-height: 24px;
     color: var(--contacts-header-color);
-
 }
 .contact-links-header {
     display: flex;
@@ -333,7 +335,8 @@ body {
     width:16px;
     height:16px;
 }
-.icon-header:hover{
+.icon-header:hover,
+.icon-header:focus{
     fill:var(--accent-color)
 }
 .icon-list{
@@ -366,27 +369,26 @@ body {
     padding-bottom:50px;
 }
 .primary-client-list{
-    display: inline-flex;
+    display: flex;
     list-style: none;
     gap:30px;
     padding-bottom:94px
 }
-.primary-client-list li{
-   display: inline-flex;
+.primary-client-list li {
+   display:flex;
     justify-content: center;
     align-items: center;
     width: 170px;
     height:92px;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
+    fill:var(--color-icon);
 }
-.primary-client-list li :focus,
-.primary-client-list li :hover{
-    cursor: pointer;
-    fill: var(--accent-color)
-}
-.primary-client-list-svg{
-    fill:var(--color-icon)
+.primary-client-list :focus,
+.primary-client-list  :hover{
+     fill: var(--accent-color);
+    border-color: var(--accent-color);
+   cursor: pointer;
 }
 .footer-socialmedia-title{
      font-weight: 700;
@@ -443,9 +445,9 @@ body {
     fill:var(--body-background-color);
 }
 .block{
-    display: inline-block;
-    align-items: flex-start;
+    padding-right:70px;
 }
-.socialmedia-center{
-    display: inline-flex;
+.test{
+    display: flex;
+    align-items: baseline;
 }
